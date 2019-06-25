@@ -1,0 +1,13 @@
+{
+    "name": "regionhalland/region-halland-page-children-navigation",
+    "description": "Front-end-plugin som returnerar alla barn-sidor inkl navigationstext",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roland Hydén",
+            "email": "Roland.Hyden@Regionhalland.se"
+        }
+    ],
+    "require": {}
+}
