@@ -74,24 +74,19 @@ Funktionen har två parametrar:
 - page
 - minPercent
 
-Man kan anropa utan parameterar enligt och då blir minPercent 25
+Man kan anropa utan parameter enligt och då blir minPercent 25, dvs minst 25% av posterna måste ha en ifylld navigationstext.
 
 ```sh
 @php($myPages = get_region_halland_page_children_navigation())
 ```
 
-Man kan anropa funktion och välja parent-sida
+OBS! Vill man själv välja vilken minPercent man vill använda genom att anropa funktionen med detta värde. I exemplet nedan vill man att minst 50% av posterna ska ha en ifylld navigationstext.
 
 ```sh
-@php($myPages = get_region_halland_page_children_navigation(9))
+@php($myPages = get_region_halland_page_children_navigation(50))
 ```
 
-Default minPercent är 25, men man kan ange ett annat värde.
-OBS! Vill man inte ange en egen parent--sida sätts denna parameter till 0
-
-```sh
-@php($myPages = get_region_halland_page_children_navigation(0,50))
-```
+Om antal poster uppfyller minPercent så sätts variabeln show-navigation till 1, annars 0.
 
 
 ## Exempel på hur arrayen kan se ut
@@ -167,6 +162,7 @@ array (size=2)
           public 'image' => string '' (length=0)
           public 'image_url' => boolean false
 ```
+
 
 ## Versionhistorik
 

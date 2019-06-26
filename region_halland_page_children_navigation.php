@@ -13,24 +13,14 @@
 	*/
 
 	// Returnera alla page children till en post
-	function get_region_halland_page_children_navigation($ID = 0, $minPercent = 25) 
+	function get_region_halland_page_children_navigation($minPercent = 25) 
 	{
 		
-		// Kolla vilket id som ska användas
-		if ($ID == 0) {
+		// Wordpress funktion för aktuell post
+		global $post;
 
-			// Wordpress funktion för aktuell post
-			global $post;
-
-			// ID för aktuell post
-			$myID = $post->ID;
-
-		} else {
-
-			// Använd det ID som funktionen anropas med
-			$myID = $ID;
-
-		}
+		// ID för aktuell post
+		$myID = $post->ID;
 		
 		// Argument
 		$args = array( 
