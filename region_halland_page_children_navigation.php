@@ -8,7 +8,7 @@
 	Description: Front-end-plugin som returnerar Page Children inkl navigation text
 	Version: 1.1.0
 	Author: Roland Hydén
-	License: MIT
+	License: GPL-3.0
 	Text Domain: regionhalland
 	*/
 
